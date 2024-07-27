@@ -34,7 +34,7 @@ header{
     width: 100px;
   }
 
-  .container{
+  .content{
     color: var(--primary-color);
     display: flex;
     flex-direction: column;

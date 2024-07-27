@@ -35,7 +35,7 @@ export function Layout() {
         </nav>
         <div className="right"></div>
       </header>
-      <div id="content" className="container">
+      <div id="content" className="content">
         <Outlet />
       </div>
     </>
