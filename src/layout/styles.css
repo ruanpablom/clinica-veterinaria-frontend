@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 40px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo a{
+    background-image: url(../assets/logo-senac-cnc-color-100.png);
+    /* background-image: url(../images/senac_logo.png); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 59px;
+    font-size: 0;
+  }
+  
+  header nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  header .right{
+    display: flex;
+    width: 100px;
+  }
