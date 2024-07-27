@@ -10,20 +10,20 @@ export function Home() {
         <h1 style={{margin:0, color: 'var(--secondary-color)'}}>Clinica Veterinária</h1>
         <nav>
             <NavLink to="/pets" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
-            <MdOutlinePets size={56} />
-            <span>Pets</span>
+                <MdOutlinePets size={56} />
+                <span>Pets</span>
             </NavLink>
             <NavLink to="/tutores" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
-            <FaUser size={56} />
-            <span>Tutores</span>
+                <FaUser size={56} />
+                <span>Tutores</span>
             </NavLink>
             <NavLink to="/consultas" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
-            <FaStethoscope  size={56} />
-            <span>Consultas</span>
+                <FaStethoscope  size={56} />
+                <span>Consultas</span>
             </NavLink>
             <NavLink to="/veterinarios" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
-            <FaUserMd  size={56} />
-            <span>Veterinários</span>
+                <FaUserMd  size={56} />
+                <span>Veterinários</span>
             </NavLink>
         </nav>
     </>  
