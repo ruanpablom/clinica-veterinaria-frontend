@@ -46,6 +46,8 @@ a{
   border: none;
   transition: all 0.3s;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 a:hover{
@@ -58,4 +60,13 @@ a:hover{
   color: var(--primary-color);
   text-decoration: none;
 }
+
+.page-title{
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+
 
