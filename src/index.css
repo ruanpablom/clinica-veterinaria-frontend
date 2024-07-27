@@ -62,10 +62,50 @@ a:hover{
 }
 
 .page-title{
-  color: var(--primary-color);
+  color: var(--secondary-color);
   display: flex;
   align-items: center;
   gap: 0.6rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input{
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+input:focus-visible{
+  border: 2px solid var(--primary-color);
+  box-shadow: none;
+  outline: none;
+}
+
+button{
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover{
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 
