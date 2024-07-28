@@ -5,8 +5,8 @@ import './styles.css'
 
 export function Home() {
   return (
-    <>
-        <h1 style={{margin:0}}>Seja bem vindo!</h1> 
+    <div className='container'>
+        <h1 style={{marginTop:20}}>Seja bem vindo!</h1> 
         <h1 style={{margin:0, color: 'var(--secondary-color)'}}>Clinica Veterinária</h1>
         <nav>
             <NavLink to="/pets" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
@@ -26,6 +26,6 @@ export function Home() {
                 <span>Veterinários</span>
             </NavLink>
         </nav>
-    </>  
+    </div>  
   )
 }
