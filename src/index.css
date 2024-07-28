@@ -61,6 +61,25 @@ a:hover{
   text-decoration: none;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+.page-header{
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  width: 100%;
+  padding: 0 20%;
+  background-color: var(--bg-color);
+  padding-top:20px;
+}
+
+
 .page-title{
   color: var(--secondary-color);
   display: flex;
@@ -68,11 +87,6 @@ a:hover{
   gap: 0.6rem;
 }
 
-.container{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 
 input{
   padding: 10px;
