@@ -1,0 +1,16 @@
+.btn-voltar{
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color:var(--primary-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+  }
+  .btn-voltar:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+  }
