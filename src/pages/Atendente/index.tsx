@@ -17,13 +17,13 @@ export function Atendente() {
                 </div>
                 <span>Nova Consulta</span>
             </NavLink>
-            <NavLink to="pets" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
-                <MdOutlinePets size={56} />
-                <span>Pets</span>
-            </NavLink>
             <NavLink to="tutores" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
                 <FaUser size={56} />
                 <span>Tutores</span>
+            </NavLink>
+            <NavLink to="pets" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
+                <MdOutlinePets size={56} />
+                <span>Pets</span>
             </NavLink>
             <NavLink to="veterinarios" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
                 <FaUserMd  size={56} />

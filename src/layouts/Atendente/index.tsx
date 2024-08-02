@@ -16,13 +16,13 @@ export function AtendenteLayout() {
             <FaHome size={14} />
             <span>Home</span>
           </NavLink>
-          <NavLink to="pets" className={({ isActive}) => isActive ? "a-active" : ""}>
-            <MdOutlinePets size={14} />
-            <span>Pets</span>
-          </NavLink>
           <NavLink to="tutores" className={({ isActive}) => isActive ? "a-active" : ""}>
             <FaUser size={14} />
             <span>Tutores</span>
+          </NavLink>
+          <NavLink to="pets" className={({ isActive}) => isActive ? "a-active" : ""}>
+            <MdOutlinePets size={14} />
+            <span>Pets</span>
           </NavLink>
           <NavLink to="veterinarios" className={({ isActive}) => isActive ? "a-active" : ""}>
             <FaUserMd  size={16} />
