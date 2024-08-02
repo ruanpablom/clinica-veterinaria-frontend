@@ -2,6 +2,10 @@ import { BotaoVoltar } from "../../../../components"
 import { FaUser } from "react-icons/fa";
 
 
+import './styles.css'
+import { CadastroForm } from "./components/CadastroForm";
+
+
 export function TutoresCadastro() {
     return (
         <div className="container">
@@ -12,6 +16,7 @@ export function TutoresCadastro() {
                     <h1>Cadastro Tutor</h1>
                 </div>
             </div>
+            <CadastroForm />
         </div>
     );
 }
