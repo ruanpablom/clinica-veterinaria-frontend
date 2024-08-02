@@ -4,7 +4,7 @@ import '../styles.css'
 import { MdOutlinePets } from "react-icons/md";
 import { FaStethoscope, FaUser, FaUserMd } from "react-icons/fa";
 
-export function AtendenteLayout() {
+export function AtendimentoLayout() {
   return (
     <>
       <header>
@@ -34,7 +34,7 @@ export function AtendenteLayout() {
           </NavLink>
         </nav>
         <div className="right">
-          <strong>Atendente</strong>
+          <strong>Atendimento</strong>
         </div>
       </header>
       <div id="content" className="content">

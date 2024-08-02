@@ -13,7 +13,7 @@ export function Home() {
                 <MdOutlinePets size={56} />
                 <span>Pets</span>
             </NavLink> */}
-            <NavLink to="/atendente" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
+            <NavLink to="/atendimento" className={({ isActive }) => `item-menu ${isActive ? 'a-active item-menu-active' : ''}`}>
                 <FaUserCircle size={56} />
                 <span>Atendente</span>
             </NavLink>
