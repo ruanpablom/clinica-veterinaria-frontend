@@ -1,21 +1,27 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Layout } from '../layout';
-import { Home, Pets, Tutores, Consultas, Veterinarios, PetsPrincipal, PetsCadastro } from '../pages';
+import { MainLayout, AtendenteLayout } from "../layouts";
+import { Home, Pets, Tutores, Consultas, Veterinarios, PetsPrincipal, PetsCadastro, Atendente } from '../pages';
 
 export const router = createBrowserRouter(
     [
       {
-        path: '/',
-        element: <Layout />,
+        path: '/', element: <MainLayout />,
         children: [
           { index: true, element: <Home /> },
-          { path: 'pets', element: <Pets />, children: [
+        ], 
+      },
+      {
+        path: '/atendente',
+        element: <AtendenteLayout />,
+        children: [
+          { index: true, element: <Atendente /> },
+          { path: '/atendente/pets', element: <Pets />, children: [
             { index: true, element: <PetsPrincipal /> },
-            { path: '/pets/cadastro', element: <PetsCadastro /> },
+            { path: '/atendente/pets/cadastro', element: <PetsCadastro /> },
           ] },
-          { path: 'tutores', element: <Tutores /> },
-          { path: 'consultas', element: <Consultas /> },
-          { path: 'veterinarios', element: <Veterinarios /> },
+          { path: '/atendente/tutores', element: <Tutores /> },
+          { path: '/atendente/consultas', element: <Consultas /> },
+          { path: '/atendente/veterinarios', element: <Veterinarios /> },
         ],
       },
     ],
