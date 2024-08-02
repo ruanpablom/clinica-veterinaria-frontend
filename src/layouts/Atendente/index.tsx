@@ -2,20 +2,20 @@ import { NavLink, Outlet } from "react-router-dom";
 
 import '../styles.css'
 import { MdOutlinePets } from "react-icons/md";
-import { FaHome, FaStethoscope, FaUser, FaUserMd } from "react-icons/fa";
+import { FaStethoscope, FaUser, FaUserMd } from "react-icons/fa";
 
 export function AtendenteLayout() {
   return (
     <>
       <header>
         <div className="logo">
-          <a href="#"/>
+          <NavLink to="/atendente"/>
         </div>
         <nav>
-          <NavLink to="/" className={({ isActive}) => isActive ? "a-active" : ""}>
+          {/* <NavLink to="/atendente" className={({ isActive}) => isActive ? "a-active" : ""}>
             <FaHome size={14} />
             <span>Home</span>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="tutores" className={({ isActive}) => isActive ? "a-active" : ""}>
             <FaUser size={14} />
             <span>Tutores</span>

@@ -3,7 +3,7 @@ import {  FaUser, FaUserMd, FaStethoscope, FaPlus  } from "react-icons/fa";
 import { MdOutlinePets } from 'react-icons/md';
 // import './styles.css'
 
-export function Atendente() {
+export function SistemaAtendente() {
   return (
     <div className='container'>
         <h1 style={{marginTop:20}}>Atendimento</h1> 

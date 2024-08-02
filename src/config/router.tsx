@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainLayout, AtendenteLayout } from "../layouts";
-import { Home, Pets, Tutores, Consultas, Veterinarios, PetsPrincipal, PetsCadastro, Atendente } from '../pages';
+import { Home, Pets, Tutores, Consultas, Veterinarios, PetsPrincipal, PetsCadastro, SistemaAtendente } from '../pages';
 
 export const router = createBrowserRouter(
     [
@@ -14,7 +14,7 @@ export const router = createBrowserRouter(
         path: '/atendente',
         element: <AtendenteLayout />,
         children: [
-          { index: true, element: <Atendente /> },
+          { index: true, element: <SistemaAtendente /> },
           { path: '/atendente/pets', element: <Pets />, children: [
             { index: true, element: <PetsPrincipal /> },
             { path: '/atendente/pets/cadastro', element: <PetsCadastro /> },
