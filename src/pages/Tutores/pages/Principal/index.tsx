@@ -1,14 +1,16 @@
-import { MdOutlinePets } from "react-icons/md"
-import './styles.css'
-import { NavLink } from "react-router-dom";
 
-export function PetsPrincipal() {
+import { NavLink } from "react-router-dom";
+import { FaUser } from "react-icons/fa";
+
+import './styles.css'
+
+export function TutoresPrincipal() {
   return (
     <div className="container">
         <div className="page-header">
             <div className="page-title">
-                <MdOutlinePets id="icon" size={36} />
-                <h1>Pets</h1>
+                <FaUser id="icon" size={36} />
+                <h1>Tutores</h1>
             </div>
             <div className="acoes-container">
                 <NavLink to="cadastro" id="btn-cadastrar">Cadastrar</NavLink>
