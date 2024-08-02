@@ -9,7 +9,7 @@ export function AtendimentoLayout() {
     <>
       <header>
         <div className="logo">
-          <NavLink to="/atendente"/>
+          <NavLink to="/atendimento"/>
         </div>
         <nav>
           {/* <NavLink to="/atendente" className={({ isActive}) => isActive ? "a-active" : ""}>

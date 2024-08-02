@@ -15,15 +15,14 @@ export const router = createBrowserRouter(
         element: <AtendimentoLayout />,
         children: [
           { index: true, element: <SistemaAtendente /> },
-          { path: '/atendimento/pets', element: <Pets />, children: [
+          { path: 'pets', element: <Pets />, children: [
             { index: true, element: <PetsPrincipal /> },
-            { path: '/atendimento/pets/cadastro', element: <PetsCadastro /> },
+            { path: 'cadastro', element: <PetsCadastro /> },
           ] },
-          { path: '/atendimento/tutores', element: <Pets />, children: [
+          { path: 'tutores', children: [
             { index: true, element: <TutoresPrincipal /> },
-            { path: '/atendimento/tutores/cadastro', element: <TutoresCadastro /> },
+            { path: 'cadastro', element: <TutoresCadastro /> },
           ] },
-          { path: '/atendimento/tutores', element: <TutoresPrincipal /> },
           { path: '/atendimento/consultas', element: <Consultas /> },
           { path: '/atendimento/veterinarios', element: <Veterinarios /> },
         ],

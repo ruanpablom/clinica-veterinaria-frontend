@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 
 import './styles.css'
+import { Input } from "../../../../components";
 
 export function TutoresPrincipal() {
   return (
@@ -15,7 +16,7 @@ export function TutoresPrincipal() {
             <div className="acoes-container">
                 <NavLink to="cadastro" id="btn-cadastrar">Cadastrar</NavLink>
                 <div className="pesquisa-container">
-                    <input type="text" placeholder="Pesquisar" />
+                    <Input type="text" placeholder="Pesquisar" />
                     <button>Pesquisar</button>
                 </div>
             </div>
