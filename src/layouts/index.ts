@@ -1,2 +1,2 @@
-export * from './Atendente'
+export * from './Atendimento'
 export * from './Main'

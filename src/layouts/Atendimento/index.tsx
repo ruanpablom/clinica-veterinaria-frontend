@@ -4,7 +4,7 @@ import '../styles.css'
 import { MdOutlinePets } from "react-icons/md";
 import { FaStethoscope, FaUser, FaUserMd } from "react-icons/fa";
 
-export function AtendenteLayout() {
+export function AtendimentoLayout() {
   return (
     <>
       <header>

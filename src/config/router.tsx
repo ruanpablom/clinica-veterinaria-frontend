@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainLayout, AtendenteLayout } from "../layouts";
+import { MainLayout, AtendimentoLayout } from "../layouts";
 import { Home, Pets, Tutores, Consultas, Veterinarios, PetsPrincipal, PetsCadastro, SistemaAtendente } from '../pages';
 
 export const router = createBrowserRouter(
@@ -12,7 +12,7 @@ export const router = createBrowserRouter(
       },
       {
         path: '/atendente',
-        element: <AtendenteLayout />,
+        element: <AtendimentoLayout />,
         children: [
           { index: true, element: <SistemaAtendente /> },
           { path: '/atendente/pets', element: <Pets />, children: [
